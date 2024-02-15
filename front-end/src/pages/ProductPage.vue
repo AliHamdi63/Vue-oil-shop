@@ -20,7 +20,7 @@ export default {
         }
     },
     async created() {
-        const response = await axios.get('/api/products');
+        const response = await axios.get(`https://oilshopback.onrender.com/api/products`);
         const products = response.data;
         this.products = products;
     }
