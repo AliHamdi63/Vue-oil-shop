@@ -20,7 +20,7 @@ export default {
         }
     },
     async created() {
-        const response = await axios.get(process.env.BACK_END_URL + '/api/products');
+        const response = await axios.get('/api/products');
         const products = response.data;
         this.products = products;
     }

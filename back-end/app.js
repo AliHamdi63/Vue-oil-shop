@@ -9,9 +9,9 @@ app.use(cors());
 
 app.use('/images', express.static(path.join(__dirname, './assets')));
 
-app.use('/apis', require('./routes/productsRouter'));
+app.use('/api', require('./routes/productsRouter'));
 
-app.use('/apis', require('./routes/cartRouter'));
+app.use('/api', require('./routes/cartRouter'));
 
 
 app.listen(PORT, () => {
